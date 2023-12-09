@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  collect:
+    cmd: python3 src/random_data.py data/raw generate
+    deps:
+    - path: src/random_data.py
+      hash: md5
+      md5: 89eb7cfa9b9a91d4097ca1dad70de94d
+      size: 2907
+  prepare:
+    cmd: python3 src/prepare.py data/prepared/train/train.csv data/prepared/test/test.csv
+    deps:
+    - path: src/prepare.py
+      hash: md5
+      md5: 3370f41f2affe7d5f0f71d6e3b820092
+      size: 1820
