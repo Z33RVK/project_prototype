@@ -21,3 +21,10 @@ stages:
       hash: md5
       md5: 0a25035b42edac1b5633ac76d7700970
       size: 2010
+  deploy:
+    cmd: sudo docker build -t predictive_maintenance_app .
+    deps:
+    - path: dockerfile
+      hash: md5
+      md5: 86df9bd62cdc6d73c46ef3eb828e0534
+      size: 420
