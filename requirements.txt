@@ -1,0 +1,8 @@
+pandas
+datetime
+subprocess
+numpy
+sys
+yaml
+scikit-learn
+mlflow
