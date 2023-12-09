@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy the Flask application code
-COPY app.py .
+COPY app/app.py .
 
 # Expose the Flask application port
 EXPOSE 5000
