@@ -1,9 +1,7 @@
 pandas
 datetime
-subprocess
 numpy
-sys
-yaml
+pyyaml
 scikit-learn
 mlflow
 flask
