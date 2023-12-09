@@ -8,6 +8,6 @@ stages:
     deps:
     - src/prepare.py
   train:
-    cmd: python3 src/
+    cmd: python3 src/train.py data/prepared/train/train.csv data/prepared/test/test.csv
     deps: 
     - src/train.py
